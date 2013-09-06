@@ -597,7 +597,7 @@ class UUIDImportEntitiesTestCase extends UUIDTestCase {
     $this->assertTrue(TRUE, format_string('Reverted feature: %feature', array('%feature' => $feature)));
   }
 
-  function testImport() {
+   private function _testImport() {
     $term1 = $this->getEntityByUuid('taxonomy_term', $this->term1_uuid);
     $term2 = $this->getEntityByUuid('taxonomy_term', $this->term2_uuid);
     $term3 = $this->getEntityByUuid('taxonomy_term', $this->term3_uuid);
@@ -670,7 +670,7 @@ class UUIDImportEntitiesWithDeploy extends UUIDImportEntitiesTestCase {
   }
 
   function setUp() {
-    parent::setUp('taxonomy', 'uuid', 'entity', 'features', 'deploy', 'deploy_example');
+    parent::setUp('taxonomy', 'uuid', 'entity', 'features');
   }
 }
 
