@@ -4,5 +4,5 @@ core = 7.x
 version = 7.x-1.0-alpha3+52-dev-01
 package = UUID
 configure = admin/config/system/uuid
-files[] = uuid.test
+;files[] = uuid.test
 
